@@ -3,11 +3,7 @@ body {
 }
 
 html {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(220, 217, 249) 0%,
-    rgb(172, 224, 217) 89.8%
-  );
+  background: linear-gradient(to left, #434343 0%, black 100%);
 }
 
 h1 {
@@ -29,7 +25,11 @@ hr {
 
 footer {
   text-align: center;
-  color: #113c25;
+  color: white;
+}
+
+footer a {
+  color: #91760d;
 }
 
 .date-content a {
