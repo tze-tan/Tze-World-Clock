@@ -1,10 +1,35 @@
 body {
-  background-color: rgba(255, 255, 255, 0.7);
   font-family: sans-serif;
+}
+
+html {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(220, 217, 249) 0%,
+    rgb(172, 224, 217) 89.8%
+  );
 }
 
 h1 {
   color: #91760d;
+}
+
+select {
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  margin: 10px 0;
+  background: #113c25;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+hr {
+  border: 0px solid rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  text-align: center;
+  color: #113c25;
 }
 
 .container {
@@ -32,13 +57,4 @@ h1 {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
   margin-bottom: 20px;
-}
-
-select {
-  padding: 10px;
-  border-radius: 4px;
-  width: 100%;
-  margin: 10px 0;
-  background: #113c25;
-  color: rgba(255, 255, 255, 0.7);
 }
