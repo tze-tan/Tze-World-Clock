@@ -34,10 +34,15 @@ selectElement.addEventListener("change", displayNewLocation);
 
 function displayNewLocation(event) {
   let selectedCity = event.target.value;
-  let selectedCityFormatted = event.target.value
-    .replace("_", " ")
-    .split("/")[1];
+  if (selectedCity === "current-city") {
+    selectedCity = moment.tz.guess();
+  }
 
+  // this is formatting the city name so that they can be used to display in the UI so it doesn't appear as Timezone name
+  // e.g. America/New_York will be displayed as New York
+  let selectedCityFormatted = selectedCity.replace("_", " ").split("/")[1];
+
+  // to display Goldcoast as goldcoast, and not queensland, which is its timezone
   if (selectedCityFormatted === "Queensland") {
     selectedCityFormatted = "Goldcoast";
   }
@@ -55,5 +60,7 @@ function displayNewLocation(event) {
             )}</div>
           </div>
           <h2 id="time">${selectedCityDatetime.format(timeFormat)}</h2>
-        </div>;`;
+        </div>
+        
+        <a href="/">Return home </a>`;
 }

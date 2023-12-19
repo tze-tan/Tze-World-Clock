@@ -32,6 +32,11 @@ footer {
   color: #113c25;
 }
 
+.date-content a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
 .container {
   background-color: #113c25;
   border-radius: 30px;
