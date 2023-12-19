@@ -44,7 +44,7 @@ function displayNewLocation(event) {
 
   // to display Goldcoast as goldcoast, and not queensland, which is its timezone
   if (selectedCityFormatted === "Queensland") {
-    selectedCityFormatted = "Goldcoast";
+    selectedCityFormatted = "Gold Coast";
   }
 
   let selectedCityDatetime = moment().tz(selectedCity);
