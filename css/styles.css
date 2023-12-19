@@ -20,7 +20,7 @@ select {
 }
 
 hr {
-  border: 0px solid rgba(255, 255, 255, 0.9);
+  border: 0.2px dashed rgba(255, 255, 255, 0.9);
 }
 
 footer {
